@@ -3,20 +3,28 @@ vermelho: #FF0000
 
 Aspectos de um site acessível
 1) conteúdo
-	- escrita do texto (frases não muito longas, texto fácil de compreender)
-	- campo de busca
-	- faq
-	- formatos (apresentar o mesmo conteúdo em diversos formatos para passar a informação)
+	- escrita do texto 
+		Para garantir que o maior número de pessoas entendam o conteúdo, é importante que o texto seja escrito da forma mais clara e simples possível, com frases curtas e vocabulário acessível ao público-alvo.
+	- campo de busca e faq
+		
+		
+	- formatos 
+		Apresentar o mesmo conteúdo em diversos formatos (textos explicativos, fotos, vídeos...) garante o entendimento de um maior número de pessoas.
 	
 2) organização
-	- semântica do HTML (buttons, links, ordem de foco)
+	- semântica do HTML 
+		A adequação da semântica do HTML, como a utilização de buttons, links e boa organização de headers, é essencial para que os leitores de tela interpretem o conteúdo da forma correta.
+		Usar <divs> personalizados em vez de botões, por exemplo, pode impedir que um usuário com deficiência visual navegue adequadamente pelo site.
 	- descrições e textos alternativos
+		Todas as imagens de conteúdo relevante para o entendimento do conteúdo devem conter textos alternativos para interpretação por leitores de tela ou pessoas com dificuldade de compreensão.
+		(inserir imagem do q é um bom texto alternativo ou não)
 	- breadcrumbs
 	- pop ups e captcha (EVITAR)
 	- mensagens de erro em formulários ( devem estar próximas ao campo que foi preenchido errado, para que o leitor de tela possa identificar, e devem conter instruções claras )
 
 3) visual
-	- legibilidade (alto contraste, 18pt, 80 caracteres por linha, fontes fluidas e de fácil entendimento, espaçamento mínimo)
+	- legibilidade 
+		alto contraste, 18pt, 80 caracteres por linha, fontes fluidas e de fácil entendimento, espaçamento mínimo)
 	- padronização e consistência
 	- filtro de cores
 	- evitar uso de cores como única forma de passar info
