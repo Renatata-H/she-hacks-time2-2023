@@ -8,6 +8,28 @@
     body {
       margin: 0;
       font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh; /* Set minimum height to fill the viewport */
+    }
+
+    .container {
+      display: flex;
+    }
+
+    main {
+      display: flex;
+      flex: 1;
+      padding: 20px;
+    }
+
+    aside {
+      width: 200px;
+      background-color: #049EC2; /* Dark blue color for sidebar */
+      padding: 10px;
+      border-right: 2px solid black; /* Black border line */
+      box-sizing: border-box;
+      z-index: 1; /* Set a lower z-index */
     }
 
     header {
@@ -17,11 +39,14 @@
       justify-content: space-between;
       align-items: center;
       border-bottom: 2px solid black; /* Black border line */
+      position: relative;
+      z-index: 2; /* Set a higher z-index to keep it above the other elements */
     }
 
     header img {
-      height: 40px; /* Adjust the height of your logo */
-      margin: 0 auto; /* Center the logo */
+      height: 70px; /* Adjust the height of your logo */
+      margin: 0 50px; /* Center the logo */
+      padding: 0;
     }
 
     input[type="text"] {
@@ -30,24 +55,19 @@
       border-radius: 4px;
     }
 
-    aside {
-      width: 200px;
-      background-color:#049EC2; /* Dark blue color for sidebar */
-      padding: 10px;
-      border-right: 2px solid black; /* Black border line */
-      box-sizing: border-box;
-    }
-
     button {
       display: block;
       width: calc(100% - 40px); /* Adjust the width of buttons */
-      background-color: #049EC2; /* Lighter blue color */
+      background-color: #109bba; /* Lighter blue color */
       color: #fff; /* White text color */
       padding: 6px; /* Adjust button padding */
       margin: 3px 0;
       border: 2px solid black; /* Black border line */
       cursor: pointer;
       transition: background-color 0.3s, color 0.3s;
+      font-size: 14px;
+      margin-bottom: 0px;
+      margin-top: 0px;
     }
 
     button:hover {
@@ -57,63 +77,76 @@
     .sub-buttons {
       padding: 7px;
       padding-left: 20px; /* Adjust the space for sub-buttons */
+      margin-bottom: 0px;
+      margin-top: 0px;
     }
 
     .sub-buttons button {
       width: calc(100% - 20px); /* Adjust the width of sub-buttons */
       margin: 2px 0;
-      padding: 6px; /* Adjust sub-button padding */
+      padding: 4px; /* Adjust sub-button padding */
+      margin-bottom: 0px;
+      margin-top: 0px;
     }
   </style>
 </head>
 <body>
 
-  <header>
-    <img src="shehacks.png" alt="Logo do site: 'Right on Sight'">
-    <input type="text" placeholder="Search...">
-  </header>
+  <div class="container">
+    <aside>
+      <div class="options"> 
+        <button tabindex="1">Button 1</button>
+        <div class="sub-buttons">
+          <button tabindex="2">Sub-button 1</button>
+          <button tabindex="3">Sub-button 2</button>
+          <button tabindex="4">Sub-button 3</button>
+        </div>
+        
+        <button tabindex="5">Button 2</button>
+        <div class="sub-buttons">
+          <button tabindex="6">Sub-button 4</button>
+          <button tabindex="7">Sub-button 5</button>
+          <button tabindex="8">Sub-button 6</button>
+        </div>
 
-  <aside>
-    <button>Button 1</button>
-    <div class="sub-buttons">
-      <button>Sub-button 1</button>
-      <button>Sub-button 2</button>
-      <button>Sub-button 3</button>
+        <button tabindex="9">Button 3</button>
+        <div class="sub-buttons">
+          <button tabindex="10">Sub-button 7</button>
+          <button tabindex="11">Sub-button 8</button>
+          <button tabindex="12">Sub-button 9</button>
+        </div>
+
+        <button tabindex="13">Button 4</button>
+        <div class="sub-buttons">
+          <button tabindex="14">Sub-button 10</button>
+          <button tabindex="15">Sub-button 11</button>
+          <button tabindex="16">Sub-button 12</button>
+        </div>
+
+        <button tabindex="17">Button 5</button>
+        <div class="sub-buttons">
+          <button tabindex="18">Sub-button 13</button>
+          <button tabindex="19">Sub-button 14</button>
+          <button tabindex="20">Sub-button 15</button>
+        </div>
+
+        <button tabindex="21">Button 6</button>
+        <button tabindex="22">Button 7</button>
+      </div>
+    </aside>
+
+    <div style="flex: 1;">
+      <header>
+        <img src="shehacks-horizontal.png" alt="Logo do site: 'Right on Sight'">
+        <input type="text" placeholder="Pesquise..." tabindex="23">
+      </header>
+
+      <main>
+        <p>Lorem ipsum</p>
+        <!-- The rest of your website content goes here -->
+      </main>
     </div>
-    
-    <button>Button 2</button>
-    <div class="sub-buttons">
-      <button>Sub-button 4</button>
-      <button>Sub-button 5</button>
-      <button>Sub-button 6</button>
-    </div>
-
-    <button>Button 3</button>
-    <div class="sub-buttons">
-      <button>Sub-button 7</button>
-      <button>Sub-button 8</button>
-      <button>Sub-button 9</button>
-    </div>
-
-    <button>Button 4</button>
-    <div class="sub-buttons">
-      <button>Sub-button 10</button>
-      <button>Sub-button 11</button>
-      <button>Sub-button 12</button>
-    </div>
-
-    <button>Button 5</button>
-    <div class="sub-buttons">
-      <button>Sub-button 13</button>
-      <button>Sub-button 14</button>
-      <button>Sub-button 15</button>
-    </div>
-
-    <button>Button 6</button>
-    <button>Button 7</button>
-  </aside>
-
-  <!-- O resto do site vem aqui -->
+  </div>
 
 </body>
 </html>
