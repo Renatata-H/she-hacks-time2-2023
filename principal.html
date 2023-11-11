@@ -18,18 +18,21 @@
     }
 
     main {
+      position: fixed;
       display: flex;
       flex: 1;
       padding: 20px;
+      margin-top: 70px; /* Adjust this value to match the height of your fixed header */
     }
 
     aside {
       width: 200px;
       background-color: #049EC2; /* Dark blue color for sidebar */
       padding: 10px;
-      border-right: 2px solid black; /* Black border line */
+      border-right: 4.5px solid #167b91;
       box-sizing: border-box;
       z-index: 1; /* Set a lower z-index */
+      
     }
 
     header {
@@ -38,7 +41,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      border-bottom: 2px solid black; /* Black border line */
+      /*border-bottom: 2px solid black; /* Black border line */
       position: fixed;
       width: 100%;
       left: 200px; /* Ensure the header starts from the left */
@@ -47,30 +50,38 @@
     }
 
     header img {
-      height: 70px; /* Adjust the height of your logo */
+      height: 400px; /* Adjust the height of your logo */
       margin: 0 50px; /* Center the logo */
       padding: 0;
     }
+
 
     input[type="text"] {
       padding: 8px;
       border: 1px solid #ccc;
       border-radius: 4px;
+      margin-left: auto;
+      flex: 1;
+      width: 50px;
+      box-sizing: border-box;
     }
 
     button {
       display: block;
-      width: calc(100% - 40px); /* Adjust the width of buttons */
+      width: calc(100% - 25px); /* Adjust the width of buttons */
       background-color: #109bba; /* Lighter blue color */
       color: #fff; /* White text color */
       padding: 6px; /* Adjust button padding */
       margin: 3px 0;
-      border: 2px solid black; /* Black border line */
+      /*border: 2px solid black;  Black border line */
       cursor: pointer;
       transition: background-color 0.3s, color 0.3s;
       font-size: 14px;
       margin-bottom: 0px;
       margin-top: 0px;
+      border-radius: 15px;
+      border-color:#109bba;
+      background-color: #0f87a2;
     }
 
     button:hover {
@@ -78,14 +89,14 @@
     }
 
     .sub-buttons {
-      padding: 7px;
+      padding: 5px;
       padding-left: 20px; /* Adjust the space for sub-buttons */
       margin-bottom: 0px;
-      margin-top: 0px;
+      margin-top: 1px;
     }
 
     .sub-buttons button {
-      width: calc(100% - 20px); /* Adjust the width of sub-buttons */
+      width: calc(100% - 4px); /* Adjust the width of sub-buttons */
       margin: 2px 0;
       padding: 4px; /* Adjust sub-button padding */
       margin-bottom: 0px;
@@ -97,6 +108,7 @@
 
   <div class="container">
     <aside>
+      <img src="logo.png" alt="Logo do site: 'Right on Sight'" style="height: 120px; margin-left: 25px;">
       <div class="options"> 
         <button tabindex="1">Button 1</button>
         <div class="sub-buttons">
@@ -140,7 +152,6 @@
 
     <div style="flex: 1;">
       <header>
-        <img src="shehacks-horizontal.png" alt="Logo do site: 'Right on Sight'">
         <input type="text" placeholder="Pesquise..." tabindex="23">
       </header>
 
