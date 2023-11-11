@@ -1,9 +1,3 @@
 azul: #049EC2
 vermelho: #FF0000
-
-Para garantir que o maior número de pessoas entendam o conteúdo, é importante que o texto seja escrito da forma mais clara e simples possível, com frases curtas e vocabulário acessível ao público-alvo. Busque sempre evitar equívocos entre o transmissor e receptor e estabelecer uma comunicação eficaz.
-Uma mesma mensagem pode ser dita de diferentes formas:
-
-A confluência de elocução carente de translucidez obscurece a comunicação. (Difícil entendimento) 
-Quando as palavras são confusas, fica difícil de entender o que se quer comunicar. (Entendimento aceitável) 
- Palavras confusas dificultam a boa comunicação. (Fácil entendimento)
+Nosso site visa reunir as informações contidas em documentos oficiais como o Guia de Boas Práticas para Acessibilidade do Governo Federal de forma dinâmica e de rápida leitura e consulta. Procuramos servir como guia prático de bons padrões de construção de sites acessíveis, diminuindo o esforço necessário por parte dos desenvolvedores e permitindo a criação de websites acessíveis a todos
