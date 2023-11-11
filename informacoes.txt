@@ -1,13 +1,20 @@
 azul: #049EC2
 vermelho: #FF0000
 
+a prática gera barreiras
+graves: é necessá rio usar o texto em formato HTML e CSS
+para que, ao aumentar o tamanho das telas, o conteúdo
+não fique distorcido. Além dessa barreira, os leitores de
+tela não leem texto renderizado como imagem
+
 explicação do site:
-Esse site  das Diretrizes de Acessibilidade para Conteúdo Web (Web Content Accessibility Guidelines - WCAG)
+Nosso site se propõe  das Diretrizes de Acessibilidade para Conteúdo Web (Web Content Accessibility Guidelines - WCAG)
 
 Aspectos de um site acessível
 1) conteúdo
 	- escrita do texto 
 		Para garantir que o maior número de pessoas entendam o conteúdo, é importante que o texto seja escrito da forma mais clara e simples possível, com frases curtas e vocabulário acessível ao público-alvo.
+
 	- campo de busca e faq
 		
 		
