@@ -1,5 +1,45 @@
 <!--ola queridas amigas!! Gostaria de ir para outra pag mas não sabe como? seus problemas foram resolvidos, olha essa função que coisa mais linda!!!-->
 
+ <aside>
+    <button>Conteúdo</button>
+    <div class="sub-buttons">
+      <button onclick="goToPage('escrita.html')">Escrita de texto</button>
+      <button onclick="goToPage('campo.html')">Campo de busca e FAQ </button>
+      <button onclick="goToPage('formatos.html')"> Formatos</button>
+    </div>
+    
+    <button>Organização</button>
+    <div class="sub-buttons">
+      <button onclick="goToPage('Semântica.html')">Semântica do HTML</button>
+      <button onclick="goToPage('Desc.html')">Descrições e textos alternativos</button>
+      <button onclick="goToPage('bread.html')">Breadcrumbs</button>
+      <button onclick="goToPage('captcha.html')">Pop ups e captcha </button>
+      <button onclick="goToPage('erro.html')"> Mensagens de erro em formulários </button>
+      
+    </div>
+
+    <button>Visual</button>
+    <div class="sub-buttons">
+      <button onclick="goToPage('legibilidade.html')">Legibilidade</button>
+      <button onclick="goToPage('padro.html')">Padronização e consistência</button>
+      <button onclick="goToPage('filtros.html')">Filtro de cores</button>
+      <button onclick="goToPage('cores.html')">Info cores</button>
+    </div>
+
+    <button>Multimídia</button>
+    <div class="sub-buttons">
+        <button onclick="goToPage('icones.html')">Icones</button>
+        <button onclick="goToPage('itens.html')">Itens decorativos</button>
+        <button onclick="goToPage('libras.html')">Libras e audiodescrição</button>
+    </div>
+
+    <button>Navegação (aspectos motores)</button>
+    <div class="sub-buttons">
+      <button onclick="goToPage('area.html')">Área de clique</button>
+      <button onclick="goToPage('espaco.html')"> Espaçamento dos conteúdos </button>
+      <button onclick="goToPage('nav.html')"> Navegação por teclado (tabindex)</button>
+    </div>
+  </aside>
   <script>
     function goToPage(page) {
         document.body.style.opacity = 0;
@@ -8,19 +48,3 @@
         }, 500);
     }
 </script>
-
-<!--Como usa-lá? segue um exemplo:-->
-<aside>
-    <button onclick="goToPage('visao.html')">Visão</button>
-    <div class="sub-buttons">
-      <button onclick="goToPage('fontes.html')">Fontes</button>
-      <button onclick="goToPage('contraste.html')">Contraste </button>
-      <button onclick="goToPage('filtros.html')">Filtros de cor</button>
-    </div>
-    
-    <button onclick="goToPage('fisica.html')">Fisica e motora</button>
-    <div class="sub-buttons">
-      <button onclick="goToPage('scroll.html')">Navegação por teclado</button>
-      <button onclick="goToPage('area.html')">Área de clique</button>
-      <button onclick="goToPage('espaco.html')"> Espaçamento dos conteúdos </button>
-    </div>
