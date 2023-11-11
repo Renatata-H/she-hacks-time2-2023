@@ -6,27 +6,34 @@ Aspectos de um site acessível
 	- escrita do texto (frases não muito longas, texto fácil de compreender)
 	- campo de busca
 	- faq
+	- formatos (apresentar o mesmo conteúdo em diversos formatos para passar a informação)
 	
 2) organização
-	- semântica do HTML
+	- semântica do HTML (buttons, links, ordem de foco)
 	- descrições e textos alternativos
 	- breadcrumbs
-	-
+	- pop ups e captcha (EVITAR)
+	- mensagens de erro em formulários ( devem estar próximas ao campo que foi preenchido errado, para que o leitor de tela possa identificar, e devem conter instruções claras )
 
 3) visual
 	- legibilidade (alto contraste, 18pt, 80 caracteres por linha, fontes fluidas e de fácil entendimento, espaçamento mínimo)
 	- padronização e consistência
 	- filtro de cores
-	- 
+	- evitar uso de cores como única forma de passar info
 	
 4) multimídia
 	- ícones
-	- 
+	- itens decorativos (e imagens como texto)
+	- LIBRAS, legendas e audiodescrição
+	- objetos com movimento (podem causar lentidão no carregamento e sobrecarga caso não hajam pausas)
 
 5) navegação (aspectos motores)
 	- área de clique
 	- espaçamento entre conteúdos (navegação com pés, tremores)
-	- navegação por teclado
+	- navegação por teclado (tabindex)
+
+extra:
+	design responsivo (mudança suave computador/celular)
 
 Bom hackaton!!
 
