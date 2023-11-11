@@ -109,46 +109,54 @@
   <div class="container">
     <aside>
       <img src="logo.png" alt="Logo do site: 'Right on Sight'" style="height: 120px; margin-left: 25px;">
-      <div class="options"> 
-        <button tabindex="1">Button 1</button>
-        <div class="sub-buttons">
-          <button tabindex="2">Sub-button 1</button>
-          <button tabindex="3">Sub-button 2</button>
-          <button tabindex="4">Sub-button 3</button>
-        </div>
+      
+      <button>Conteúdo</button>
+      <div class="sub-buttons">
+        <button onclick="goToPage('escrita.html')">Escrita de texto</button>
+        <button onclick="goToPage('campo.html')">Campo de busca e FAQ </button>
+        <button onclick="goToPage('formatos.html')"> Formatos</button>
+      </div>
+      
+      <button>Organização</button>
+      <div class="sub-buttons">
+        <button onclick="goToPage('Semântica.html')">Semântica do HTML</button>
+        <button onclick="goToPage('Desc.html')">Descrições e textos alternativos</button>
+        <button onclick="goToPage('bread.html')">Breadcrumbs</button>
+        <button onclick="goToPage('captcha.html')">Pop ups e captcha </button>
+        <button onclick="goToPage('erro.html')"> Mensagens de erro em formulários </button>
         
-        <button tabindex="5">Button 2</button>
-        <div class="sub-buttons">
-          <button tabindex="6">Sub-button 4</button>
-          <button tabindex="7">Sub-button 5</button>
-          <button tabindex="8">Sub-button 6</button>
-        </div>
-
-        <button tabindex="9">Button 3</button>
-        <div class="sub-buttons">
-          <button tabindex="10">Sub-button 7</button>
-          <button tabindex="11">Sub-button 8</button>
-          <button tabindex="12">Sub-button 9</button>
-        </div>
-
-        <button tabindex="13">Button 4</button>
-        <div class="sub-buttons">
-          <button tabindex="14">Sub-button 10</button>
-          <button tabindex="15">Sub-button 11</button>
-          <button tabindex="16">Sub-button 12</button>
-        </div>
-
-        <button tabindex="17">Button 5</button>
-        <div class="sub-buttons">
-          <button tabindex="18">Sub-button 13</button>
-          <button tabindex="19">Sub-button 14</button>
-          <button tabindex="20">Sub-button 15</button>
-        </div>
-
-        <button tabindex="21">Button 6</button>
-        <button tabindex="22">Button 7</button>
+      </div>
+  
+      <button>Visual</button>
+      <div class="sub-buttons">
+        <button onclick="goToPage('legibilidade.html')">Legibilidade</button>
+        <button onclick="goToPage('padro.html')">Padronização e consistência</button>
+        <button onclick="goToPage('filtros.html')">Filtro de cores</button>
+        <button onclick="goToPage('cores.html')">Info cores</button>
+      </div>
+  
+      <button>Multimídia</button>
+      <div class="sub-buttons">
+          <button onclick="goToPage('icones.html')">Icones</button>
+          <button onclick="goToPage('itens.html')">Itens decorativos</button>
+          <button onclick="goToPage('libras.html')">Libras e audiodescrição</button>
+      </div>
+  
+      <button>Navegação (aspectos motores)</button>
+      <div class="sub-buttons">
+        <button onclick="goToPage('area.html')">Área de clique</button>
+        <button onclick="goToPage('espaco.html')"> Espaçamento dos conteúdos </button>
+        <button onclick="goToPage('nav.html')"> Navegação por teclado (tabindex)</button>
       </div>
     </aside>
+    <script>
+      function goToPage(page) {
+          document.body.style.opacity = 0;
+          setTimeout(function() {
+              window.location = page;
+          }, 500);
+      }
+  </script>
 
     <div style="flex: 1;">
       <header>
