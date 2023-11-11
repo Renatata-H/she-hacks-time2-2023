@@ -39,8 +39,11 @@
       justify-content: space-between;
       align-items: center;
       border-bottom: 2px solid black; /* Black border line */
-      position: relative;
-      z-index: 2; /* Set a higher z-index to keep it above the other elements */
+      position: fixed;
+      width: 100%;
+      left: 200px; /* Ensure the header starts from the left */
+      right: 0; /* Ensure the header spans the entire width */
+      z-index: 2; /* Set a higher z-index to keep it above other elements */
     }
 
     header img {
