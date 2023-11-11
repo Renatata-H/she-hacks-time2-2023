@@ -22,7 +22,10 @@
       display: flex;
       flex: 1;
       padding: 20px;
-      margin-top: 70px; /* Adjust this value to match the height of your fixed header */
+      margin-top: 60px; /* Adjust this value to match the height of your fixed header */
+      column-count: 1;
+      column-width: auto;
+      flex-direction: column
     }
 
     aside {
@@ -36,8 +39,8 @@
     }
 
     header {
-      background-color: #e74c3c; /* Red color */
-      padding: 10px;
+      background-color: #eb3b28; /* Red color */
+      padding: 19px;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -47,6 +50,7 @@
       left: 200px; /* Ensure the header starts from the left */
       right: 0; /* Ensure the header spans the entire width */
       z-index: 2; /* Set a higher z-index to keep it above other elements */
+      border-bottom: 3px solid #b21d0c;;
     }
 
     header img {
@@ -57,12 +61,13 @@
 
 
     input[type="text"] {
+      display: block;
       padding: 8px;
       border: 1px solid #ccc;
-      border-radius: 4px;
-      margin-left: auto;
+      border-radius: 15px;
+      margin: 0 400px; /* Adjust the margin to your preference */
+      max-width: unset;
       flex: 1;
-      width: 50px;
       box-sizing: border-box;
     }
 
@@ -77,15 +82,15 @@
       cursor: pointer;
       transition: background-color 0.3s, color 0.3s;
       font-size: 14px;
-      margin-bottom: 0px;
+      margin-bottom: 3px;
       margin-top: 0px;
       border-radius: 15px;
-      border-color:#109bba;
-      background-color: #0f87a2;
+      border-color:#ee2c17;
+      background-color:#eb3b28;
     }
 
     button:hover {
-      background-color: #2980b9; /* Darker blue on hover */
+      background-color: #db1d07; /* Darker blue on hover */
     }
 
     .sub-buttons {
@@ -101,6 +106,13 @@
       padding: 4px; /* Adjust sub-button padding */
       margin-bottom: 0px;
       margin-top: 0px;
+      background-color: #0f87a2;
+      border-color:#109bba;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    .sub-buttons button:hover {
+      background-color:#109bba; /* Darker blue on hover */
     }
   </style>
 </head>
@@ -112,42 +124,44 @@
       
       <button>Conteúdo</button>
       <div class="sub-buttons">
-        <button onclick="goToPage('escrita.html')">Escrita de texto</button>
-        <button onclick="goToPage('campo.html')">Campo de busca e FAQ </button>
-        <button onclick="goToPage('formatos.html')"> Formatos</button>
+        <button tabindex="1" onclick="goToPage('escrita.html')">Escrita de texto</button>
+        <button tabindex="2" onclick="goToPage('campo.html')">Campo de busca e FAQ </button>
+        <button tabindex="3" onclick="goToPage('formatos.html')"> Formatos</button>
       </div>
       
       <button>Organização</button>
       <div class="sub-buttons">
-        <button onclick="goToPage('Semântica.html')">Semântica do HTML</button>
-        <button onclick="goToPage('Desc.html')">Descrições e textos alternativos</button>
-        <button onclick="goToPage('bread.html')">Breadcrumbs</button>
-        <button onclick="goToPage('captcha.html')">Pop ups e captcha </button>
-        <button onclick="goToPage('erro.html')"> Mensagens de erro em formulários </button>
+        <button tabindex="4" onclick="goToPage('Semântica.html')">Semântica do HTML</button>
+        <button tabindex="5" onclick="goToPage('Desc.html')">Descrições e textos alternativos</button>
+        <button tabindex="6" onclick="goToPage('bread.html')">Breadcrumbs</button>
+        <button tabindex="7" onclick="goToPage('captcha.html')">Pop ups e captcha </button>
+        <button tabindex="8" onclick="goToPage('erro.html')"> Mensagens de erro em formulários </button>
         
       </div>
   
       <button>Visual</button>
       <div class="sub-buttons">
-        <button onclick="goToPage('legibilidade.html')">Legibilidade</button>
-        <button onclick="goToPage('padro.html')">Padronização e consistência</button>
-        <button onclick="goToPage('filtros.html')">Filtro de cores</button>
-        <button onclick="goToPage('cores.html')">Info cores</button>
+        <button tabindex="9" onclick="goToPage('legibilidade.html')">Legibilidade</button>
+        <button tabindex="10" onclick="goToPage('padro.html')">Padronização e consistência</button>
+        <button tabindex="11" onclick="goToPage('filtros.html')">Filtro de cores</button>
+        <button tabindex="12" onclick="goToPage('cores.html')">Info cores</button>
       </div>
   
       <button>Multimídia</button>
       <div class="sub-buttons">
-          <button onclick="goToPage('icones.html')">Icones</button>
-          <button onclick="goToPage('itens.html')">Itens decorativos</button>
-          <button onclick="goToPage('libras.html')">Libras e audiodescrição</button>
+        <button tabindex="13" onclick="goToPage('icones.html')">Icones</button>
+        <button tabindex="14" onclick="goToPage('itens.html')">Itens decorativos</button>
+        <button tabindex="15" onclick="goToPage('libras.html')">Libras e audiodescrição</button>
       </div>
   
-      <button>Navegação (aspectos motores)</button>
+      <button>Navegação motora</button>
       <div class="sub-buttons">
-        <button onclick="goToPage('area.html')">Área de clique</button>
-        <button onclick="goToPage('espaco.html')"> Espaçamento dos conteúdos </button>
-        <button onclick="goToPage('nav.html')"> Navegação por teclado (tabindex)</button>
+        <button tabindex="16" onclick="goToPage('area.html')">Área de clique</button>
+        <button tabindex="17" onclick="goToPage('espaco.html')"> Espaçamento dos conteúdos </button>
+        <button tabindex="18" onclick="goToPage('nav.html')"> Navegação por teclado</button>
       </div>
+      <button tabindex="19" onclick="goToPage('perguntas.html')"> Perguntas frequentes </button>
+      <button tabindex="20" onclick="goToPage('agente.html')"> Sobre nós </button>
     </aside>
     <script>
       function goToPage(page) {
@@ -160,12 +174,14 @@
 
     <div style="flex: 1;">
       <header>
-        <input type="text" placeholder="Pesquise..." tabindex="23">
+        <input type="text" placeholder=" &#128269; Pesquise..." tabindex="21" alt="Uma barra de pesquisa">
       </header>
 
       <main>
-        <p>Lorem ipsum</p>
-        <!-- The rest of your website content goes here -->
+        <h1>Lorem ipsum</h1>
+        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus orci dui, accumsan egestas laoreet et, consequat eu justo. Nulla tortor dolor, placerat ut sagittis quis, rhoncus sed neque. Ut ultricies magna non nunc pellentesque ultricies vitae vitae est. Nullam vitae vestibulum eros. Duis consequat, tellus vel consectetur ullamcorper, elit ipsum maximus velit, non fringilla dui nibh et dolor. Pellentesque et molestie ipsum. Pellentesque vitae tortor eu purus ultricies tincidunt. </p>
+        <p> Donec et risus ipsum. Cras augue nibh, auctor vitae sodales vel, sagittis malesuada nisi. Quisque vestibulum urna eget tortor malesuada varius. Aenean sed ornare metus. Duis et nisi feugiat, tempor purus in, dapibus dolor. Mauris consequat faucibus sem sed varius. Nunc ac neque quis neque condimentum auctor a ac turpis. Suspendisse potenti. Vivamus rhoncus sit amet risus eu semper. Etiam in convallis elit. Praesent accumsan bibendum enim, et vehicula dui sodales vitae. In vehicula ligula malesuada ullamcorper auctor. Nunc risus justo, placerat a est vel, laoreet faucibus mi. Cras nec ligula eget dui tempor lobortis. Fusce pretium ipsum eget ligula gravida, a volutpat lacus placerat. Vivamus tincidunt egestas feugiat. </p>
+        <p> Pellentesque lectus mauris, vulputate pharetra erat aliquam, pulvinar sodales quam. Quisque mattis erat ac eros suscipit interdum. Quisque id ullamcorper libero, a rutrum est. Cras dapibus metus et orci pharetra placerat. Curabitur a pulvinar eros, nec pulvinar erat. Suspendisse bibendum, turpis id porttitor ultricies, lorem risus mollis ligula, ut maximus leo odio sed nisl. Etiam blandit mi vel ante hendrerit semper. Cras venenatis non ligula ac egestas. Vivamus dignissim urna id neque facilisis commodo. Curabitur at dictum lorem, mollis vulputate dui. Sed ultrices mattis elit ac elementum. Vivamus ac quam et nisi commodo commodo. </p>
       </main>
     </div>
   </div>
