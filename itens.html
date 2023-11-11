@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Itens decorativos - Rights on Sight</title>
+  <link href='https://fonts.googleapis.com/css?family=Fredoka One' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet'>
+  <link rel="shortcut icon" type="image/x-icon" href="bussula.png" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh; /* Set minimum height to fill the viewport */
+      font-size: 120%;
+    }
+
+    .container {
+      display: flex;
+    }
+
+    main {
+      position: fixed;
+      display: flex;
+      flex: 1;
+      padding: 20px;
+      margin-top: 60px; /* Adjust this value to match the height of your fixed header */
+      column-count: 1;
+      column-width: auto;
+      flex-direction: column;
+      margin-right: 90px;
+      margin-left: 90px;
+      text-align: justify;
+    }
+
+    aside {
+      width: 300px;
+      background-color: #049EC2; /* Dark blue color for sidebar */
+      padding: 10px;
+      border-right: 4.5px solid #167b91;
+      box-sizing: border-box;
+      z-index: 1; /* Set a lower z-index */
+      
+    }
+
+    header {
+      background-color: #ffffff; /* Red color */
+      padding: 19px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: fixed;
+      width: 100%;
+      left: 300px; /* Ensure the header starts from the left */
+      right: 0; /* Ensure the header spans the entire width */
+      z-index: 2; /* Set a higher z-index to keep it above other elements */
+      border-bottom: 3px solid #ffffff;;
+    }
+
+    header img {
+      height: 425px; /* Adjust the height of your logo */
+      margin: 0 75px; /* Center the logo */
+      padding: 0;
+    }
+
+
+    input[type="text"] {
+      display: block;
+      padding: 8px;
+      border: 4px solid #ec3d3d;
+      border-radius: 30px;
+      margin: 0 400px; /* Adjust the margin to your preference */
+      max-width: unset;
+      flex: 1;
+      box-sizing: border-box;
+    }
+
+    button {
+      display: block;
+      width: calc(100% - 25px); /* Adjust the width of buttons */
+      background-color: #049EC2 ;/*#109bba; /* Lighter blue color */
+      color: #fff; /* White text color */
+      padding: 6px; /* Adjust button padding */
+      margin: 3px 0;
+      /*border: 2px solid black;  Black border line */
+      cursor: pointer;
+      transition: background-color 0.3s, color 0.3s;
+      font-size: 14px;
+      margin-bottom: 3px;
+      margin-top: 0px;
+      border-radius: 15px;
+      /*border-color:#ee2c17;
+      background-color:#eb3b28;/*/
+      border: 0px;
+      text-align: left;
+      font-size: 105%;
+    }
+
+    button:hover {
+      background-color: #db1d07; /* Darker blue on hover */
+    }
+
+    .sub-buttons {
+      padding: 5px;
+      padding-left: 20px; /* Adjust the space for sub-buttons */
+      margin-bottom: 0px;
+      margin-top: 1px;
+    }
+
+    .sub-buttons button {
+      width: calc(100% - 4px); /* Adjust the width of sub-buttons */
+      margin: 2px 0;
+      padding: 4px; /* Adjust sub-button padding */
+      margin-bottom: 0px;
+      margin-top: 0px;
+      background-color: #049EC2;
+      /*
+      background-color: #0f87a2;
+      border-color:#109bba;*/
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    .sub-buttons button:hover {
+      background-color:#db1d07; /* Darker blue on hover */
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <aside>
+      <img src="logo.png" alt="Logo do site: 'Right on Sight'" style="height: 180px; margin-left: 45px;">
+      
+      <button style="font-family: Fredoka One;">Conteúdo</button>
+      <div class="sub-buttons">
+        <button tabindex="1" onclick="goToPage('escrita_do_texto.html')">Escrita de texto</button>
+        <button tabindex="2" onclick="goToPage('campo.html')">Campo de busca e FAQ </button>
+        <button tabindex="3" onclick="goToPage('formatos.html')"> Formatos</button>
+      </div>
+      
+      <button style="font-family: Fredoka One;">Organização</button>
+      <div class="sub-buttons">
+        <button tabindex="4" onclick="goToPage('Semântica.html')"> Semântica do HTML </button>
+        <button tabindex="5" onclick="goToPage('Desc.html')">Descrições e textos alternativos</button>
+        <button tabindex="6" onclick="goToPage('bread.html')">Breadcrumbs</button>
+        <button tabindex="7" onclick="goToPage('popup.html')">Pop ups</button>
+        <button tabindex="7" onclick="goToPage('captcha.html')">Captcha </button>
+        <button tabindex="8" onclick="goToPage('erro.html')"> Mensagens de erro em formulários </button>
+        
+      </div>
+  
+      <button style="font-family: Fredoka One;">Visual</button>
+      <div class="sub-buttons">
+        <button tabindex="9" onclick="goToPage('legibilidade.html')">Legibilidade</button>
+        <button tabindex="10" onclick="goToPage('padro.html')">Padronização e consistência</button>
+        <button tabindex="11" onclick="goToPage('filtros.html')">Filtro de cores</button>
+        <button tabindex="12" onclick="goToPage('cores.html')">Info cores</button>
+      </div>
+  
+      <button style="font-family: Fredoka One;">Multimídia</button>
+      <div class="sub-buttons">
+        <button tabindex="13" onclick="goToPage('icones.html')">Icones</button>
+        <button tabindex="14" style="background-color: #167b91;">Itens decorativos</button>
+        <button tabindex="15" onclick="goToPage('libras.html')">Libras e audiodescrição</button>
+      </div>
+  
+      <button style="font-family: Fredoka One;">Navegação motora</button>
+      <div class="sub-buttons">
+        <button tabindex="16" onclick="goToPage('area.html')">Área de clique</button>
+        <button tabindex="18" onclick="goToPage('nav.html')"> Navegação por teclado</button>
+      </div>
+      <button style="font-family: Fredoka One;" tabindex="19" onclick="goToPage('perguntas.html')"> Perguntas frequentes </button>
+      <button style="font-family: Fredoka One;" tabindex="20" onclick="goToPage('agente.html')"> Sobre nós </button>
+    </aside>
+    <script>
+      function goToPage(page) {
+          document.body.style.opacity = 0;
+          setTimeout(function() {
+              window.location = page;
+          }, 500);
+      }
+  </script>
+
+    <div style="flex: 1;">
+      <header>
+        <input type="text" placeholder=" &#128269; Pesquise..." tabindex="21" alt="Uma barra de pesquisa">
+      </header>
+
+      <main>
+        <h1 style="font-family: Fredoka One; text-align: center;">Itens decorativos</h1>
+        <p> Ao usar imagens meramente decorativas, devem ter texto alternativo ‘’, para que possam ser ignoradas por leitores de tela.
+            Evite ao máximo usar textos dentro de imagens, para que, ao aumentar o tamanho das telas, o conteúdo não fique distorcido. Além disso, os leitores de
+            tela não leem texto renderizado como imagem e tampouco os recursos de tradução automática do site conseguem reconhecê-lo.
+            </p>
+        
+      <!-- p style="font-family: Pacifico; text-align: right;"> Com carinho, Equipe 2 </p -->
+      </main>
+    </div>
+  </div>
+
+</body>
+</html>
