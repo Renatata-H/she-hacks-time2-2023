@@ -3,6 +3,7 @@ vermelho: #FF0000
 
 Para garantir que o maior número de pessoas entendam o conteúdo, é importante que o texto seja escrito da forma mais clara e simples possível, com frases curtas e vocabulário acessível ao público-alvo. Busque sempre evitar equívocos entre o transmissor e receptor e estabelecer uma comunicação eficaz.
 Uma mesma mensagem pode ser dita de diferentes formas:
-(Difícil entendimento) A confluência de elocução carente de translucidez obscurece a comunicação.
-(Entendimento aceitável) Quando as palavras são confusas, fica difícil de entender o que se quer comunicar
-(Fácil entendimento) Palavras confusas dificultam a boa comunicação
+
+A confluência de elocução carente de translucidez obscurece a comunicação. (Difícil entendimento) 
+Quando as palavras são confusas, fica difícil de entender o que se quer comunicar. (Entendimento aceitável) 
+ Palavras confusas dificultam a boa comunicação. (Fácil entendimento)
