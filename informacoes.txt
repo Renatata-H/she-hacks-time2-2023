@@ -13,8 +13,10 @@ Aspectos de um site acessível
 	
 2) organização
 	- semântica do HTML 
-		A adequação da semântica do HTML, como a utilização de buttons, links e boa organização de headers, é essencial para que os leitores de tela interpretem o conteúdo da forma correta.
-		Usar <divs> personalizados em vez de botões, por exemplo, pode impedir que um usuário com deficiência visual navegue adequadamente pelo site.
+		A adequação da semântica do HTML é essencial para que os leitores de tela usados por pessoas com deficiência visual interpretem o conteúdo da forma correta.
+		* Usar <divs> personalizados em vez de botões e links pode impedir que um usuário com deficiência visual navegue adequadamente pelo site
+		* A hierarquia do conteúdo também deve ser adequadamente representada no HTML por meio de headers e parágrafos, que permitem que os softwares leiam o conteúdo na ordem esperada
+
 	- descrições e textos alternativos
 		Todas as imagens de conteúdo relevante para o entendimento do conteúdo devem conter textos alternativos para interpretação por leitores de tela ou pessoas com dificuldade de compreensão.
 		(inserir imagem do q é um bom texto alternativo ou não)
