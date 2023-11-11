@@ -29,6 +29,7 @@ Aspectos de um site acessível
 
 	- descrições e textos alternativos
 		Todas as imagens de conteúdo relevante para o entendimento do conteúdo devem conter textos alternativos para interpretação por leitores de tela ou pessoas com dificuldade de compreensão.
+		<img src=”foto” alt=”Duas pessoas em uma sala de aula sorrindo”>
 		(inserir imagem do q é um bom texto alternativo ou não)
 	- breadcrumbs
 	- pop ups e captcha (EVITAR)
