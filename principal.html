@@ -11,8 +11,8 @@
     }
 
     header {
-      background-color: #3498db;
-      padding: 10px;
+      background-color: #FF0000;
+      padding: 15px;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -24,7 +24,7 @@
     }
 
     button {
-      background-color: #3498db; 
+      background-color: #FF0000; 
       color: #fff;
       padding: 8px 15px;
       border: 2px solid black; 
@@ -36,21 +36,59 @@
     button:hover {
       background-color: #2980b9; 
     }
+    body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    height: 100vh; /* altura total da janela */
+}
+
+.sidebar {
+    width: 15%; /* largura desejada para a barra lateral */
+    background: #049EC2; /* cor de fundo da barra lateral */
+}
+
+.content {
+    width: 75%; /* largura restante para o conteúdo principal */
+    background: #fff; /* cor de fundo do conteúdo principal */
+}
+
   </style>
 </head>
 <body>
 
   <header>
     <img src="shehacks.png" alt="Logo">
-    <button>Button 1</button>
-    <button>Button 2</button>
-    <button>Button 3</button>
-    <button>Button 4</button>
-    <button>Button 5</button>
+    <button>Acessibilidade</button>
+    <button>O projeto</button>
+    <button>Sobre nós</button>
+    <button>Apoie</button>
   </header>
+
+  <!DOCTYPE html>
+<html>
+<head>
+    <title>Sidebar Example</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <!-- Conteúdo da barra lateral -->
+        </div>
+        <div class="content">
+            <!-- Conteúdo principal do site -->
+        </div>
+    </div>
+</body>
+</html>
 
   <!-- O resto do site vem aqui -->
 
 </body>
 </html>
-
