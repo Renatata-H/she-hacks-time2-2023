@@ -6,10 +6,6 @@
   <title>Formatos - Rights on Sight</title>
   <link href='https://fonts.googleapis.com/css?family=Fredoka One' rel='stylesheet'>
   <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet'>
-   <link href='https://fonts.googleapis.com/css?family=Montserrat:thin,extra-light,light,100,200,300,400,500,600,700,800' 
-rel='stylesheet' type='text/css'>
-  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@800&display=swap" rel="stylesheet">
-  <link rel="shortcut icon" type="image/x-icon" href="bussula.png" />
   <link rel="shortcut icon" type="image/x-icon" href="bussula.png" />
   <style>
     body {
@@ -37,6 +33,22 @@ rel='stylesheet' type='text/css'>
       margin-right: 90px;
       margin-left: 90px;
       text-align: justify;
+    }
+
+    .twocolumns {
+      display: flex;
+      /* Optionally, you can set a maximum width for the container */
+      max-width: 800px;
+      margin: 0 auto; /* Center the container on the page */
+      text-align: center;
+    }
+
+    /* Column styles */
+    .column {
+      flex: 1; /* Each column takes equal width */
+      padding: 10px;
+      border: 0px solid #ccc;
+      margin: 5px;
     }
 
     aside {
@@ -196,8 +208,18 @@ rel='stylesheet' type='text/css'>
         <h1 style="font-family: Fredoka One; text-align: center;">Formatos</h1>
         <p>Apresentar o mesmo conteúdo em diversos formatos (textos explicativos, fotos, vídeos...) garante o entendimento de mais pessoas, evitando ambiguidades e estimulando a compreensão do texto por completo. Por exemplo:</p>
 
-        <p>Vendo biscoitos! (no sentido de vender)</p>
-        <p>Vendo biscoitos! (olhando biscoitos)</p>
+        <div class="twocolumns">
+          <div class="column">
+            <p>"Vendo biscoitos!", no sentido de vender</p>
+        <img src="guri_biscoito.png" alt="Um menino segurando uma bandeja de biscoitos, com o propósito de vendê-las.">
+          </div>
+          <div class="column">
+            <p>"Vendo biscoitos!", no sentido de observar</p>
+        <img src="guri_bolacha.png" alt="Um menino segurando um biscoito, perplexo.">
+          </div>
+        </div>
+        
+        
 
 
       <!-- p style="font-family: Pacifico; text-align: right;"> Com carinho, Equipe 2 </p -->
