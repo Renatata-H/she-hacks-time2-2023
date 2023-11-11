@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your Website</title>
+  <title>Página Principal - Rights on Sight</title>
   <style>
     body {
       margin: 0;
@@ -11,82 +11,107 @@
     }
 
     header {
-      background-color: #FF0000;
-      padding: 15px;
+      background-color: #e74c3c; /* Red color */
+      padding: 10px;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      border-bottom: 2px solid black; 
+      border-bottom: 2px solid black; /* Black border line */
     }
 
     header img {
-      height: 40px;
+      height: 40px; /* Adjust the height of your logo */
+      margin: 0 auto; /* Center the logo */
+    }
+
+    input[type="text"] {
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    aside {
+      width: 200px;
+      background-color:#049EC2; /* Dark blue color for sidebar */
+      padding: 10px;
+      border-right: 2px solid black; /* Black border line */
+      box-sizing: border-box;
     }
 
     button {
-      background-color: #FF0000; 
-      color: #fff;
-      padding: 8px 15px;
-      border: 2px solid black; 
-      margin-left: 10px; 
+      display: block;
+      width: calc(100% - 40px); /* Adjust the width of buttons */
+      background-color: #049EC2; /* Lighter blue color */
+      color: #fff; /* White text color */
+      padding: 6px; /* Adjust button padding */
+      margin: 3px 0;
+      border: 2px solid black; /* Black border line */
       cursor: pointer;
       transition: background-color 0.3s, color 0.3s;
     }
 
     button:hover {
-      background-color: #2980b9; 
+      background-color: #2980b9; /* Darker blue on hover */
     }
-    body, html {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    font-family: Arial, sans-serif;
-}
 
-.container {
-    display: flex;
-    height: 100vh; /* altura total da janela */
-}
+    .sub-buttons {
+      padding: 7px;
+      padding-left: 20px; /* Adjust the space for sub-buttons */
+    }
 
-.sidebar {
-    width: 15%; /* largura desejada para a barra lateral */
-    background: #049EC2; /* cor de fundo da barra lateral */
-}
-
-.content {
-    width: 75%; /* largura restante para o conteúdo principal */
-    background: #fff; /* cor de fundo do conteúdo principal */
-}
-
+    .sub-buttons button {
+      width: calc(100% - 20px); /* Adjust the width of sub-buttons */
+      margin: 2px 0;
+      padding: 6px; /* Adjust sub-button padding */
+    }
   </style>
 </head>
 <body>
 
   <header>
-    <img src="shehacks.png" alt="Logo">
-    <button>Acessibilidade</button>
-    <button>O projeto</button>
-    <button>Sobre nós</button>
-    <button>Apoie</button>
+    <img src="shehacks.png" alt="Logo do site: 'Right on Sight'">
+    <input type="text" placeholder="Search...">
   </header>
 
-  <!DOCTYPE html>
-<html>
-<head>
-    <title>Sidebar Example</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-</head>
-<body>
-    <div class="container">
-        <div class="sidebar">
-            <!-- Conteúdo da barra lateral -->
-        </div>
-        <div class="content">
-            <!-- Conteúdo principal do site -->
-        </div>
+  <aside>
+    <button>Button 1</button>
+    <div class="sub-buttons">
+      <button>Sub-button 1</button>
+      <button>Sub-button 2</button>
+      <button>Sub-button 3</button>
     </div>
-</body>
-</html>
+    
+    <button>Button 2</button>
+    <div class="sub-buttons">
+      <button>Sub-button 4</button>
+      <button>Sub-button 5</button>
+      <button>Sub-button 6</button>
+    </div>
+
+    <button>Button 3</button>
+    <div class="sub-buttons">
+      <button>Sub-button 7</button>
+      <button>Sub-button 8</button>
+      <button>Sub-button 9</button>
+    </div>
+
+    <button>Button 4</button>
+    <div class="sub-buttons">
+      <button>Sub-button 10</button>
+      <button>Sub-button 11</button>
+      <button>Sub-button 12</button>
+    </div>
+
+    <button>Button 5</button>
+    <div class="sub-buttons">
+      <button>Sub-button 13</button>
+      <button>Sub-button 14</button>
+      <button>Sub-button 15</button>
+    </div>
+
+    <button>Button 6</button>
+    <button>Button 7</button>
+  </aside>
 
   <!-- O resto do site vem aqui -->
 
