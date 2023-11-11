@@ -1,6 +1,9 @@
 azul: #049EC2
 vermelho: #FF0000
 
+explicação do site:
+Esse site  das Diretrizes de Acessibilidade para Conteúdo Web (Web Content Accessibility Guidelines - WCAG)
+
 Aspectos de um site acessível
 1) conteúdo
 	- escrita do texto 
@@ -26,7 +29,9 @@ Aspectos de um site acessível
 
 3) visual
 	- legibilidade 
-		alto contraste, 18pt, 80 caracteres por linha, fontes fluidas e de fácil entendimento, espaçamento mínimo)
+		Para maior legibilidade dos textos, as fontes utilizadas devem ser fluidas (evitando uso de fontes com caligrafia rebuscada), de tamanho mínimo 18pt (ou 14pt para textos em negrito).
+		O contraste entre o texto e as imagens ou cores de fundo é essencial para garantir a leitura. 
+		Além disso, os textos devem possuir espaçamento [] entre linhas
 	- padronização e consistência
 	- filtro de cores
 	- evitar uso de cores como única forma de passar info
@@ -40,7 +45,8 @@ Aspectos de um site acessível
 5) navegação (aspectos motores)
 	- área de clique
 	- espaçamento entre conteúdos (navegação com pés, tremores)
-	- navegação por teclado (tabindex)
+	- navegação por teclado 
+		A navegação pelo teclado é imprescindível para pessoas que navegam com os pés e pessoas que sofrem de tremores que dificultam a utilização de cliques (tabindex)
 
 extra:
 	design responsivo (mudança suave computador/celular)
