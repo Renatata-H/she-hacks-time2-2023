@@ -1,0 +1,26 @@
+<!--ola queridas amigas!! Gostaria de ir para outra pag mas não sabe como? seus problemas foram resolvidos, olha essa função que coisa mais linda!!!-->
+
+  <script>
+    function goToPage(page) {
+        document.body.style.opacity = 0;
+        setTimeout(function() {
+            window.location = page;
+        }, 500);
+    }
+</script>
+
+<!--Como usa-lá? segue um exemplo:-->
+<aside>
+    <button onclick="goToPage('visao.html')">Visão</button>
+    <div class="sub-buttons">
+      <button onclick="goToPage('fontes.html')">Fontes</button>
+      <button onclick="goToPage('contraste.html')">Contraste </button>
+      <button onclick="goToPage('filtros.html')">Filtros de cor</button>
+    </div>
+    
+    <button onclick="goToPage('fisica.html')">Fisica e motora</button>
+    <div class="sub-buttons">
+      <button onclick="goToPage('scroll.html')">Navegação por teclado</button>
+      <button onclick="goToPage('area.html')">Área de clique</button>
+      <button onclick="goToPage('espaco.html')"> Espaçamento dos conteúdos </button>
+    </div>
