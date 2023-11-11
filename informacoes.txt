@@ -1,64 +1,8 @@
 azul: #049EC2
 vermelho: #FF0000
 
-a prática gera barreiras
-graves: é necessá rio usar o texto em formato HTML e CSS
-para que, ao aumentar o tamanho das telas, o conteúdo
-não fique distorcido. Além dessa barreira, os leitores de
-tela não leem texto renderizado como imagem
-
-explicação do site:
-Nosso site se propõe  das Diretrizes de Acessibilidade para Conteúdo Web (Web Content Accessibility Guidelines - WCAG)
-
-Aspectos de um site acessível
-1) conteúdo
-	- escrita do texto 
-		Para garantir que o maior número de pessoas entendam o conteúdo, é importante que o texto seja escrito da forma mais clara e simples possível, com frases curtas e vocabulário acessível ao público-alvo.
-
-	- campo de busca e faq
-		
-		
-	- formatos 
-		Apresentar o mesmo conteúdo em diversos formatos (textos explicativos, fotos, vídeos...) garante o entendimento de um maior número de pessoas.
-	
-2) organização
-	- semântica do HTML 
-		A adequação da semântica do HTML é essencial para que os leitores de tela usados por pessoas com deficiência visual interpretem o conteúdo da forma correta.
-		* Usar <divs> personalizados em vez de botões e links pode impedir que um usuário com deficiência visual navegue adequadamente pelo site
-		* A hierarquia do conteúdo também deve ser adequadamente representada no HTML por meio de headers e parágrafos, que permitem que os softwares leiam o conteúdo na ordem esperada
-
-	- descrições e textos alternativos
-		Todas as imagens de conteúdo relevante para o entendimento do conteúdo devem conter textos alternativos para interpretação por leitores de tela ou pessoas com dificuldade de compreensão.
-		<img src=”foto” alt=”Duas pessoas em uma sala de aula sorrindo”>
-		(inserir imagem do q é um bom texto alternativo ou não)
-	- breadcrumbs
-	- pop ups e captcha (EVITAR)
-	- mensagens de erro em formulários ( devem estar próximas ao campo que foi preenchido errado, para que o leitor de tela possa identificar, e devem conter instruções claras )
-
-3) visual
-	- legibilidade 
-		Para maior legibilidade dos textos, as fontes utilizadas devem ser fluidas (evitando uso de fontes com caligrafia rebuscada), de tamanho mínimo 18pt (ou 14pt para textos em negrito).
-		O contraste entre o texto e as imagens ou cores de fundo é essencial para garantir a leitura. 
-		Além disso, os textos devem possuir espaçamento [] entre linhas
-	- padronização e consistência
-	- filtro de cores
-	- evitar uso de cores como única forma de passar info
-	
-4) multimídia
-	- ícones
-	- itens decorativos (e imagens como texto)
-		Evite usar 
-	- LIBRAS, legendas e audiodescrição
-	- objetos com movimento (podem causar lentidão no carregamento e sobrecarga caso não hajam pausas)
-
-5) navegação (aspectos motores)
-	- área de clique
-	- espaçamento entre conteúdos (navegação com pés, tremores)
-	- navegação por teclado 
-		A navegação pelo teclado é imprescindível para pessoas que navegam com os pés e pessoas que sofrem de tremores que dificultam a utilização de cliques (tabindex)
-
-extra:
-	design responsivo (mudança suave computador/celular)
-
-Bom hackaton!!
-
+Para garantir que o maior número de pessoas entendam o conteúdo, é importante que o texto seja escrito da forma mais clara e simples possível, com frases curtas e vocabulário acessível ao público-alvo. Busque sempre evitar equívocos entre o transmissor e receptor e estabelecer uma comunicação eficaz.
+Uma mesma mensagem pode ser dita de diferentes formas:
+(Difícil entendimento) A confluência de elocução carente de translucidez obscurece a comunicação.
+(Entendimento aceitável) Quando as palavras são confusas, fica difícil de entender o que se quer comunicar
+(Fácil entendimento) Palavras confusas dificultam a boa comunicação
