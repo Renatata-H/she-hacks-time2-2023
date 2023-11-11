@@ -47,6 +47,7 @@ Aspectos de um site acessível
 4) multimídia
 	- ícones
 	- itens decorativos (e imagens como texto)
+		Evite usar 
 	- LIBRAS, legendas e audiodescrição
 	- objetos com movimento (podem causar lentidão no carregamento e sobrecarga caso não hajam pausas)
 
