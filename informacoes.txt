@@ -1,5 +1,32 @@
 azul: #049EC2
 vermelho: #FF0000
 
+Aspectos de um site acessível
+1) conteúdo
+	- escrita do texto (frases não muito longas, texto fácil de compreender)
+	- campo de busca
+	- faq
+	
+2) organização
+	- semântica do HTML
+	- descrições e textos alternativos
+	- breadcrumbs
+	-
+
+3) visual
+	- legibilidade (alto contraste, 18pt, 80 caracteres por linha, fontes fluidas e de fácil entendimento, espaçamento mínimo)
+	- padronização e consistência
+	- filtro de cores
+	- 
+	
+4) multimídia
+	- ícones
+	- 
+
+5) navegação (aspectos motores)
+	- área de clique
+	- espaçamento entre conteúdos (navegação com pés, tremores)
+	- navegação por teclado
+
 Bom hackaton!!
 
